@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="layout-template" template="/WEB-INF/views/tiles/layouts/LayoutTemplate.jsp">
+        <put-attribute name="title" value=""/>
+
+    </definition>
+    <definition name="homePage" extends="layout-template">
+        <put-attribute name="title" value="/WEB-INF/views/pages/index.jsp"/>
+    </definition>
+
+    <definition name="secondPage" extends="layout-template">
+        <put-attribute name="title" value="/WEB-INF/views/pages/secondpage.jsp"/>
+    </definition>
+
+    <definition name="thirdPage" extends="layout-template">
+        <put-attribute name="title" value="/WEB-INF/views/pages/testpathvariable.jsp"/>
+    </definition>
+
+    <definition name="fourthPage" extends="layout-template">
+        <put-attribute name="title" value="/WEB-INF/views/pages/testrequestparam.jsp"/>
+    </definition>
+
+    <definition name="page2" extends="layout-template">
+        <put-attribute name="title" value="/WEB-INF/views/pages/testredirectattributes.jsp"/>
+    </definition>
+
+
+
+
+
+
+</tiles-definitions>
